@@ -1,9 +1,7 @@
 body {
-  margin: 0 auto;
-  width: 50%;
   background-image: url('images/background.jpg');
   width: 100% !important;
-  height: 800px;
+  height: 100vh;
   position: relative;
   background-position:center; 
   background-attachment:scroll; 
@@ -14,15 +12,27 @@ body {
   background-repeat:no-repeat;
 }
 
-h3, h4, li {
+.container {
+  margin: 0 auto;
+  width: 40%;
+  
+}
+
+h4  {
+  color: black;
+  font-weight: bolder;
+}
+
+h3, li{
   color: white;
+  font-weight: bolder;
 }
 
 
 @media (max-width: 767px) {
-  body {
+  .container {
     margin: 0 auto;
-    width: 90%;
+    width: 85%;
   }
    
 }
