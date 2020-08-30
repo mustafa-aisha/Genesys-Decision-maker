@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 
+
 export class App extends Component {
     state = {
         question: '',
@@ -70,11 +71,10 @@ export class App extends Component {
                        <li style = {{listStyleType: 'none'}}>{this.state.option2}</li><br/>
                        <li style = {{listStyleType: 'none'}}>{this.state.option3}</li><br/>
                    </ul>
-                    <h3 className = "text-center" style = {{color: 'red'}}>{this.state.answers}</h3>
+                    <h3 className = "text-center" style = {{color: 'white'}}>{this.state.answers}</h3>
                 </div>
             </div>
         )
     }
 }
-
 export default App
