@@ -43,24 +43,24 @@ export class App extends Component {
 
     render() {
         return (
-            <div class = "container">
+            <div className = "container">
                 <br/>
                 <form onSubmit = {this.generateAnswers}>
                     <h1>Question</h1>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="question" onChange = {this.handleQuestion} value = {this.state.question}/>   
+                    <div className="form-group">
+                        <input type="text" className="form-control" id="question" onChange = {this.handleQuestion} value = {this.state.question}/>   
                     </div>
                     <h1>Options</h1>
-                    <div class="form-group">     
-                        <input type="text" class="form-control" id="option1" placeholder = 'A' onChange = {this.handleFirstOption} value = {this.state.option1}/>
+                    <div className="form-group">     
+                        <input type="text" className="form-control" id="option1" placeholder = 'A' onChange = {this.handleFirstOption} value = {this.state.option1}/>
                     </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="option2" placeholder = 'B'  onChange = {this.handleSecondOption} value = {this.state.option2}/>
+                    <div className="form-group">
+                        <input type="text" className="form-control" id="option2" placeholder = 'B'  onChange = {this.handleSecondOption} value = {this.state.option2}/>
                     </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="option3" placeholder = 'C' onChange = {this.handleThirdOption} value = {this.state.option3}/>
+                    <div className="form-group">
+                        <input type="text" className="form-control" id="option3" placeholder = 'C' onChange = {this.handleThirdOption} value = {this.state.option3}/>
                     </div>
-                    <button type="submit" class="btn btn-primary">Generate Answers</button>
+                    <button type="submit" className="btn btn-primary">Generate Answers</button>
                 </form><br/>
 
                 <div>
@@ -70,7 +70,7 @@ export class App extends Component {
                        <li style = {{listStyleType: 'none'}}>{this.state.option2}</li><br/>
                        <li style = {{listStyleType: 'none'}}>{this.state.option3}</li><br/>
                    </ul>
-                    <h3 class = "text-center" style = {{color: 'red'}}>{this.state.answers}</h3>
+                    <h3 className = "text-center" style = {{color: 'red'}}>{this.state.answers}</h3>
                 </div>
             </div>
         )
